@@ -2,9 +2,6 @@ import { FlatList, Text, View } from "react-native"
 import { data } from "../../data/data"
 import { ProductScreen } from "../../components/products"
 
-
-
-
 export default function App() {
     const handleClick = () => {
 
@@ -18,5 +15,4 @@ export default function App() {
             />
         </View>
     )
-
 }
