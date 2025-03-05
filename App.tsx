@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const handleClick = () => {
+    alert('ola')
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Pressable style={styles.button} onPress={handleClick}>
+        <Text>Aperte aqui!</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +23,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+    width: 200,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ff0000',
+    borderRadius: 15
+  }
 });
