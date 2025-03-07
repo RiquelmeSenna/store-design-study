@@ -16,9 +16,10 @@ export const Button = ({ name, handleClick }: Props) => {
 
 const styles = StyleSheet.create({
     area: {
-        backgroundColor: '#4267B2',
+        backgroundColor: '#164e85',
         borderRadius: 12,
-        width: 220,
+        paddingVertical: 15,
+        paddingHorizontal: 25,
         height: 60,
         justifyContent: 'center',
         alignItems: 'center'

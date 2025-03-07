@@ -25,10 +25,10 @@ const styles = StyleSheet.create({
     container: {
         marginTop: StatusBar.currentHeight || 0,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        flex: 1
     },
     img: {
-        marginTop: 150,
         height: 250,
         width: 250,
         marginBottom: 15

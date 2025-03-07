@@ -10,3 +10,9 @@ export const getProduct = (id: number) => {
     const product = data.products.find(item => item.id == id)
     return product
 }
+
+export const getProductsFromCategory = (categoryId: number) => {
+    const products = data.products.filter(item => item.idCategory == categoryId)
+
+    return products
+}
